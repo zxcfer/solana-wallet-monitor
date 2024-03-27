@@ -1,0 +1,11 @@
+[package]
+name = "solana-wallet-monitor"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sqlx = { version = "0.7.3", features = [ "runtime-async-std-native-tls", "mysql" ] }
+solana-client = "1.14.13"
+solana-account-decoder = "1.14.13"
